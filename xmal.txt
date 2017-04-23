@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.zero_to_infinity.try1.active"
+    style="@style/AppTheme"
+    android:accessibilityLiveRegion="assertive"
+    android:accessibilityTraversalAfter="@android:integer/status_bar_notification_info_maxnum"
+    android:accessibilityTraversalBefore="@integer/abc_config_activityDefaultDur"
+    android:backgroundTint="#2a728a"
+    android:backgroundTintMode="screen"
+    android:clickable="true"
+    android:gravity="fill_vertical"
+    android:translationZ="@dimen/abc_dialog_padding_top_material">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="100sp"
+        android:text="Heat sensor"
+        android:background="#4CAF50"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000066"
+        android:id="@+id/switch1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="100sp"
+        android:text="force sensor"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#2196f3"
+        android:id="@+id/switch2"
+        android:textColor="#000066"
+        android:layout_below="@+id/switch1"
+        android:layout_alignLeft="@+id/switch1"
+        android:layout_alignStart="@+id/switch1" />
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="safty sensore"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/switch3"
+        android:background="#9975bd"
+        android:textColor="#000066"
+        android:layout_below="@+id/switch2"
+        android:layout_alignLeft="@+id/switch2"
+        android:layout_alignStart="@+id/switch2"
+        />
+
+    <Switch
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="nuclear radiation sensors"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:id="@+id/switch4"
+        android:textColor="#000066"
+        android:background="#ff9933"
+        android:layout_below="@+id/switch3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:checked="true"
+        android:gravity="left"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#009999"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:id="@+id/imageView2"
+        android:src="@drawable/mapgoogle"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/switch1"
+        android:layout_alignBottom="@+id/switch4"
+        android:layout_toLeftOf="@+id/switch1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PROBABILITY"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:background="#2196f3"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/progressbar"
+        android:max="100"
+        android:text="gold"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#009900"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="oil"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#ffff00"
+        android:id="@+id/progressBar2"
+        android:layout_alignLeft="@+id/progressBar3"
+        android:layout_alignStart="@+id/progressBar3"
+        android:layout_below="@+id/progressbar" />
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="nuclear"
+        android:textDirection="firstStrong"
+        android:textAlignment="textStart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#9933ff"
+        android:id="@+id/progressBar3"
+        android:layout_below="@+id/progressbar"
+        android:layout_margin="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="left"
+        android:id="@+id/button"
+        android:layout_below="@+id/progressBar3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="right"
+        android:id="@+id/button2"
+        android:layout_below="@+id/button4"
+        android:layout_alignRight="@+id/switch4"
+        android:layout_alignEnd="@+id/switch4" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="up"
+        android:id="@+id/button4"
+        android:layout_alignTop="@+id/progressBar3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dawn"
+        android:id="@+id/button5"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/switch4"
+        android:layout_toStartOf="@+id/switch4" />
+
+
+</RelativeLayout>
